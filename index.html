@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Programação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">Fundamentos de Programação</h1>
+            <ul class="menu">
+                <li><a href="#intro">Introdução</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#importancia">Importância</a></li>
+                <li><a href="#aplicacoes">Aplicações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+       <!-- Introdução -->
+<section id="intro" class="section intro">
+    <h2>O que são Estruturas de Controle?</h2>
+    <p>
+        Estruturas de controle são construções fundamentais na programação que permitem alterar o fluxo de execução de um programa com base em condições específicas. Elas são essenciais para tomar decisões dentro de um programa e para a repetição de ações. Sem elas, o código seria linear e incapaz de reagir de maneira dinâmica a diferentes situações.
+    </p>
+    <div class="video-container">
+        <p><strong>Assista ao vídeo abaixo para entender como as estruturas de controle são aplicadas na prática:</strong></p>
+        <video class="video" controls>
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+        </video>
+    </div>
+</section>
+
+
+       <!-- Tipos de Estruturas de Controle -->
+<section id="tipos" class="section tipos">
+    <h2>Tipos de Estruturas de Controle</h2>
+    <div class="tipos-grid">
+        <!-- Condicionais -->
+        <div class="tipo">
+            <h3>Condicionais</h3>
+            <p>
+                Estruturas condicionais são usadas para tomar decisões no código, permitindo que diferentes blocos de código sejam executados dependendo de condições específicas. Elas são fundamentais para a lógica de qualquer programa.
+            </p>
+            <ul>
+                <li><strong>if:</strong> Executa um bloco de código apenas se a condição for verdadeira.</li>
+                <li><strong>else:</strong> Fornece um bloco alternativo caso a condição no <code>if</code> seja falsa.</li>
+                <li><strong>else if:</strong> Permite verificar múltiplas condições em sequência.</li>
+                <li><strong>switch:</strong> Uma alternativa ao <code>if-else</code>, usado quando há múltiplos valores possíveis para uma variável.</li>
+            </ul>
+            <div class="exemplo-aplicacao">
+                <p><strong>Exemplo prático:</strong></p>
+                <pre>
+if (idade >= 18) {
+    console.log("Você é maior de idade.");
+} else {
+    console.log("Você é menor de idade.");
+}
+                </pre>
+            </div>
+        </div>
+
+        <!-- Loops -->
+        <div class="tipo">
+            <h3>Loops</h3>
+            <p>
+                Estruturas de repetição, ou loops, são usadas para executar um bloco de código várias vezes. Eles são essenciais para percorrer coleções, realizar cálculos repetitivos e automatizar tarefas.
+            </p>
+            <ul>
+                <li><strong>for:</strong> Usado para iterar sobre uma sequência, como um intervalo de números ou uma lista.</li>
+                <li><strong>while:</strong> Executa enquanto a condição for verdadeira. Ideal para quando o número de repetições é indefinido.</li>
+                <li><strong>do while:</strong> Garante que o código seja executado pelo menos uma vez antes de verificar a condição.</li>
+            </ul>
+            <div class="spacer1"></div>
+            <div class="exemplo-aplicacao">
+                <p><strong>Exemplo prático:</strong></p>
+                <pre>
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+<p></p>
+<p></p>
+                </pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Importância das Estruturas de Controle -->
+<section id="importancia" class="section importancia">
+    <h2>Importância das Estruturas de Controle</h2>
+    <p>As estruturas de controle são fundamentais para organizar e simplificar a lógica de programação, tornando o código mais eficiente e legível.</p>
+    <div class="importancia-conteudo">
+        <p><strong>Organização e Clareza:</strong> As estruturas de controle permitem que a lógica de um programa seja organizada de maneira sequencial, condicional ou repetitiva. Isso facilita a compreensão do fluxo de execução do programa.</p>
+        <p><strong>Eficiência no Desempenho:</strong> Utilizando loops e condicionais, é possível evitar a repetição desnecessária de código, tornando o software mais eficiente, tanto em termos de performance quanto de manutenção.</p>
+        <p><strong>Facilidade de Manutenção:</strong> Com o uso correto das estruturas de controle, é mais fácil identificar, corrigir e atualizar partes do código sem comprometer a funcionalidade geral do programa.</p>
+        <p><strong>Exemplos Práticos:</strong> Estruturas de controle são amplamente utilizadas em algoritmos de busca, em validações de formulários, em sistemas de automação e em muitos outros cenários de desenvolvimento de software.</p>
+    </div>
+</section>
+
+
+       <!-- Aplicações Práticas -->
+<section id="aplicacoes" class="section aplicacoes">
+    <h2>Aplicações Práticas</h2>
+    <div class="aplicacoes-grid">
+        <!-- Condicionais -->
+        <div class="aplicacao">
+            <h3>Condicionais</h3>
+            <p>As estruturas condicionais são muito utilizadas em formulários de validação, onde diferentes ações são tomadas com base nas respostas do usuário. Exemplos típicos incluem verificação de idade, verificação de campo obrigatório e até mesmo controle de acessos.</p>
+            <div class="exemplo-aplicacao">
+                <p><strong>Exemplo prático:</strong></p>
+                <pre>
+if (usuarioIdade >= 18) {
+    console.log("Acesso permitido!");
+} else {
+    console.log("Acesso negado!");
+}
+                </pre>
+            </div>
+        </div>
+
+        <!-- Loops -->
+        <div class="aplicacao">
+            <h3>Loops</h3>
+            <p>Loops são amplamente utilizados em algoritmos de busca, processamento de dados e iteração sobre coleções. Eles ajudam a automatizar tarefas repetitivas e processar grandes volumes de dados de forma eficiente.</p>
+            <div class="spacer0"></div>
+            <div class="exemplo-aplicacao">
+                <p><strong>Exemplo prático:</strong></p>
+                <pre>
+for (let i = 0; i < listaDeUsuarios.length; i++) {
+    console.log(listaDeUsuarios[i]);
+}
+<p></p>
+                </pre>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Curiosidades -->
+        <section id="curiosidades" class="section curiosidades">
+            <h2>Curiosidades Históricas e Principais Contribuições</h2>
+            <div class="curiosidades-grid">
+                <div class="curiosidade">
+                    <img src="grace_hopper.jpg" alt="Grace Hopper" class="curiosidade-img">
+                    <h3>Grace Hopper</h3>
+                    <p>Conhecida como a "Rainha da Computação", Grace Hopper desenvolveu o primeiro compilador, o
+                        <strong>A-0 System</strong>, que traduziu código-fonte para linguagem de máquina.
+                        Ela também desempenhou um papel crucial no desenvolvimento da linguagem COBOL.
+                    </p>
+                    <p>
+                    <div class="spacer"></div>
+                    Saiba mais:
+                    <a href="https://en.wikipedia.org/wiki/Grace_Hopper" target="_blank">Wikipedia</a> |
+                    <a href="https://americanhistory.si.edu/collections/search/object/nmah_334663"
+                        target="_blank">Smithsonian</a>
+                    </p>
+                </div>
+                <div class="curiosidade">
+                    <img src="alan_turing.jpg" alt="Alan Turing" class="curiosidade-img">
+                    <h3>Alan Turing</h3>
+                    <p>Alan Turing é considerado o pai da computação moderna. Ele foi fundamental na criação da
+                        <strong>Máquina de Turing</strong>, um modelo teórico para algoritmos e computação.
+                        Durante a Segunda Guerra Mundial, Turing ajudou a decifrar os códigos da máquina Enigma,
+                        contribuindo significativamente para o esforço aliado.
+                    </p>
+                    <p>
+                    <div class="spacer2"></div>
+                    Saiba mais:
+                    <a href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">Wikipedia</a> |
+                    <a href="https://www.turing.org.uk/" target="_blank">The Turing Archive</a>
+                    </p>
+                </div>
+                <div class="curiosidade">
+                    <img src="ada_lovelace.jpg" alt="Ada Lovelace" class="curiosidade-img">
+                    <h3>Ada Lovelace</h3>
+                    <p>Reconhecida como a primeira programadora da história, Ada Lovelace escreveu um algoritmo para a
+                        máquina analítica de Charles Babbage.
+                        Sua visão foi além dos cálculos mecânicos, imaginando um futuro em que computadores pudessem
+                        manipular símbolos e até mesmo criar música.</p>
+                    <p>
+                    <div class="spacer3"></div>
+                    Saiba mais:
+                    <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Wikipedia</a> |
+                    <a href="https://www.computerhistory.org/babbage/adalovelace/" target="_blank">Computer History
+                        Museum</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <button id="scrollToTopBtn" class="scroll-to-top">
+            ↑
+        </button>
+    
+        <script src="script.js"></script>
+
+        <footer class="footer">
+            <p>Desenvolvido para ensinar os Fundamentos de Programação © 2024</p>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
